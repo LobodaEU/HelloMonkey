@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hello, Cheeky</string>
+
+    <string name="hello">Hello, Cheeky</string>
+    <string name="monkey">Monkey, monkey</string>
+    <string name="love">We love you</string>
+    <string name="kiss">Kiss for you</string>
+    <string name="todo">TODO</string>
+    <string name="all">Full song</string>
+</resources>
