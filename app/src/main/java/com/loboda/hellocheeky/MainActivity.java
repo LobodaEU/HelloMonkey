@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("ResourceType")
             @Override
             public void onClick(@NonNull View View) {
+                stopMusic( );
 
 //
                 switch (View.getId()) {
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 //                        }
                         mPlayer.start();
                         imageView.setImageResource(R.raw.hello_pc);
-                        
+
                         break;
                     case R.id.button3:
 
@@ -131,5 +132,17 @@ public class MainActivity extends AppCompatActivity {
                 getPackageName());
 
          mPlayer= MediaPlayer.create(this, sound_id);
+
     };
+    public void stopMusic( ) {
+
+        if (mPlayer != null) {
+            mPlayer.stop();
+            mPlayer.reset();
+            mPlayer.release();
+            mPlayer = null;
+
+        }
+    };
+
 }
